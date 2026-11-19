@@ -1,5 +1,4 @@
 FROM ubuntu:24.04
-EXPOSE 5001
 WORKDIR /usr/src/app
 
 COPY public ./public
@@ -13,5 +12,6 @@ RUN apt install -y nodejs
 RUN npm install
 RUN npm run build
 RUN npm install -g serve
+EXPOSE 5001
 
 CMD ["serve", "-s", "--listen", "5001", "build"]
