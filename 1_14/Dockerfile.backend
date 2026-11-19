@@ -1,7 +1,7 @@
 FROM golang:1.27.4
 WORKDIR /usr/src/app
 COPY 1_13 .
-ENV REQUEST_ORIGIN=http://127.0.0.1:5001
+ENV REQUEST_ORIGIN=http://localhost:5001
 RUN go build
 RUN go test ./...
 EXPOSE 8080
