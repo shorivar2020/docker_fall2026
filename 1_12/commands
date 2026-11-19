@@ -1,0 +1,2 @@
+docker build -t frontend_port .
+docker run -p 127.0.0.1:5001:5001 frontend_port
