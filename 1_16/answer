@@ -1,3 +1,10 @@
 https://myow-gltl.onrender.com
 
 I just create simple small app to show cat and said that my app is working
+I vibe code this app in python
+Add dockerfile
+Build it and run it localy
+Than push it in dockerhub
+Than i use "Render" host
+i choose to host app, choose my image from docker hub
+and than my app is running:)
